@@ -6,6 +6,7 @@ const LockedDoor =
       <div className="door locked">
         <p>The door is locked</p>
       </div>
+      
       <button onClick={unlock}>Unlock</button>
     </div>;
 
