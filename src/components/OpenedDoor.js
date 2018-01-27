@@ -3,7 +3,10 @@ import React from 'react';
 const OpenedDoor =
   ({ close }) =>
     <div>
-      <p>The door is open</p>
+      <div className="door open">
+        <p>The door is open</p>
+      </div>
+      
       <button onClick={close}>Close</button>
     </div>;
 

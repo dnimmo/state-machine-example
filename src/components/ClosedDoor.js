@@ -6,7 +6,10 @@ const ClosedDoor =
     open,
   }) => 
     <div>
-      <p>The door is closed</p>
+      <div className="door closed">
+        <p>The door is closed</p>
+      </div>
+
       <button onClick={lock}>Lock</button>
       <button onClick={open}>Open</button>
     </div>;

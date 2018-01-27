@@ -3,7 +3,9 @@ import React from 'react';
 const LockedDoor =
   ({ unlock }) => 
     <div>
-      <p>The door is locked</p>
+      <div className="door locked">
+        <p>The door is locked</p>
+      </div>
       <button onClick={unlock}>Unlock</button>
     </div>;
 
