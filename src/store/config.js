@@ -1,6 +1,7 @@
-import { createStore, combineReducers } from 'redux';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
+import stateBridge from './middleware/stateBridge';
 import alarm from './room/alarm'
 import door from './room/door';
 
@@ -12,7 +13,9 @@ const reducers = combineReducers({
 const configureStore =
   () => createStore(
     reducers,
-    composeWithDevTools(),
+    composeWithDevTools(
+      applyMiddleware(stateBridge)
+    ),
   );
 
 const configuredStore = configureStore();
