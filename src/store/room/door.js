@@ -29,7 +29,8 @@ const initialState = {
 export
 const open = 
   () => ({ 
-    type: actionTypes.OPEN,  
+    type: actionTypes.OPEN,
+    parallelStateRequest: 'TRIGGER',
   });
 
 export

@@ -1,7 +1,7 @@
-import {
+/**import {
   actionTypes as doorActionTypes,
 } from './door'
-
+*/
 
 export
 const actionTypes = {
@@ -54,7 +54,7 @@ const trigger =
   });
 
 
-const handleParallelActions =
+/** const handleParallelActions =
   ({ 
     actionType,
     stateName,
@@ -72,11 +72,11 @@ const handleParallelActions =
         return { parallelActionHandled: false };
     };
   };
-
+*/
 
 const alarm =
   (state = initialState, action) => {
-    const { 
+    /** const {
       parallelActionHandled, 
       result, 
     } = handleParallelActions({ 
@@ -84,7 +84,9 @@ const alarm =
       stateName: state._stateType.name,
     });
 
-    if (parallelActionHandled) return result;
+     if (parallelActionHandled) return result;
+
+    */
 
     const actionIsAllowed =
     state._stateType.availableActions.includes(action.type);
