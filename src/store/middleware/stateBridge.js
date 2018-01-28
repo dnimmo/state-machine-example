@@ -1,5 +1,4 @@
 const stateBridge = store => next => action => {
-
     // Run parallel state request if it exists
     if (action.parallelStateRequest) next({ type: action.parallelStateRequest });
 
