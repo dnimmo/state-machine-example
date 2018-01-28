@@ -1,8 +1,8 @@
 import React from 'react'
-import Door from './containers/Door'
+import Room from './containers/room/Room'
 
 const App = 
   () => 
-    <Door />
+    <Room />
 
 export default App;

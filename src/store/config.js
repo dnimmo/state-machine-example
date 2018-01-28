@@ -1,9 +1,11 @@
 import { createStore, combineReducers } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
-import door from './door';
+import alarm from './room/alarm'
+import door from './room/door';
 
 const reducers = combineReducers({
+  alarm,
   door,
 });
 

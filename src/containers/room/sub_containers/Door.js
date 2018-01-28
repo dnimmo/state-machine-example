@@ -8,11 +8,11 @@ import {
   open as openFunction,
   lock as lockFunction,
   unlock as unlockFunction, 
-} from '../store/door';
+} from '../../../store/room/door';
 
-import OpenedDoor from '../components/OpenedDoor';
-import ClosedDoor from '../components/ClosedDoor';
-import LockedDoor from '../components/LockedDoor';
+import OpenedDoor from '../../../components/OpenedDoor';
+import ClosedDoor from '../../../components/ClosedDoor';
+import LockedDoor from '../../../components/LockedDoor';
 
 const Door = 
   ({ 
