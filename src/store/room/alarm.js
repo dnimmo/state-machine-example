@@ -1,8 +1,3 @@
-/**import {
-  actionTypes as doorActionTypes,
-} from './door'
-*/
-
 export
 const actionTypes = {
   ARM: 'ARM',
@@ -54,40 +49,8 @@ const trigger =
   });
 
 
-/** const handleParallelActions =
-  ({ 
-    actionType,
-    stateName,
-  }) => {
-    switch(actionType) {
-      case doorActionTypes.OPEN:
-        return { 
-          parallelActionHandled: true, 
-          result: 
-            stateName === stateTypes.ARMED.name
-              ? { _stateType: stateTypes.TRIGGERED }
-              : { _stateType: stateTypes[stateName] }
-        }
-      default: 
-        return { parallelActionHandled: false };
-    };
-  };
-*/
-
 const alarm =
   (state = initialState, action) => {
-    /** const {
-      parallelActionHandled, 
-      result, 
-    } = handleParallelActions({ 
-      actionType: action.type, 
-      stateName: state._stateType.name,
-    });
-
-     if (parallelActionHandled) return result;
-
-    */
-
     const actionIsAllowed =
     state._stateType.availableActions.includes(action.type);
 

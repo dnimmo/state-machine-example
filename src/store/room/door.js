@@ -1,3 +1,7 @@
+import {
+  actionTypes as alarmActionTypes,
+} from './alarm';
+
 export
 const actionTypes = {
   OPEN: 'OPEN',
@@ -30,7 +34,7 @@ export
 const open = 
   () => ({ 
     type: actionTypes.OPEN,
-    parallelStateRequest: 'TRIGGER',
+    broadcastAction: alarmActionTypes.TRIGGER,
   });
 
 export

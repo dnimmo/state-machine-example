@@ -1,7 +1,7 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
-import stateBridge from './middleware/stateBridge';
+import stateBridge from './middleware/state_bridge';
 import alarm from './room/alarm'
 import door from './room/door';
 
